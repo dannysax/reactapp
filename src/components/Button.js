@@ -11,7 +11,7 @@ class Button extends Component{
 
     changeName = () => {
         this.setState({
-            name: this.state.name=="Dannysax Nail"?"James Forough":"Dannysax Nail"
+            name: this.state.name=="Dannysax Nails"?"James Forough":"Dannysax Nails"
         })
     }
     
