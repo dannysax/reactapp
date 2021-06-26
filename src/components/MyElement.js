@@ -3,11 +3,11 @@ import React from "react"
 function MyElement(props){
     function Myfunction(lib){
         return lib.map(ele=>
-            <li>{ele}</li>)
+            <li key={ele}>{ele}</li>)
     }
     return(
         <div>
-            <h2 key={props.ele}>{Myfunction(props.lib)}</h2>
+            <h2>{Myfunction(props.lib)}</h2>
         </div>
     )
 }
