@@ -4,6 +4,10 @@ import MyElement from "./components/MyElement"
 import MyClass from "./components/MyClass"
 import Forms from "./components/Forms"
 import LifeCycle from './components/LifeCycle';
+import React, {Component} from 'react';
+import ComponentA from "./components/ComponentA"
+
+export const MyContext = React.createContext()
 
 function App() {
   return (
@@ -11,10 +15,13 @@ function App() {
       <Button name="Daniel"/>
       <MyElement lib = {["laravel", "flask", "react", "vue.js"]}/>
       <MyClass schools = {["Havard", "Yale", "Hopkins"]}/>
-      <Forms/>
+  <Forms/>
       <LifeCycle/>
-    </div>
-  );
+<MyContext.Provider value="This is a context value">
+    <ComponentA />
+</MyContext.Provider>
+</div>
+    );
 }
 
 export default App;
