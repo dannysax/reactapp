@@ -6,6 +6,8 @@ import Forms from "./components/Forms"
 import LifeCycle from './components/LifeCycle';
 import React, {Component} from 'react';
 import ComponentA from "./components/ComponentA"
+import Count from './components/Count';
+import Counter from './components/Counter';
 
 export const MyContext = React.createContext()
 
@@ -20,7 +22,10 @@ function App() {
 <MyContext.Provider value="This is a context value">
     <ComponentA />
 </MyContext.Provider>
+<Count/>
+<Counter/>
 </div>
+
     );
 }
 
