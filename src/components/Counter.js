@@ -19,7 +19,7 @@ class Counter extends Component{
         return(
             <React.Fragment>
                 <h2>{this.state.counter}</h2>
-                <button onClick={this.IncreaseCount}>class count</button>
+                <button className="btn btn-secondary" onClick={this.IncreaseCount}>class count</button>
             </React.Fragment>
         )
     }

@@ -3,7 +3,7 @@ import React, {useState} from "react"
 
 function Count(){
     const [Count, setCount] = useState(0)
-
+   
     function IncrementButton(){
         setCount(
             Count + 1
@@ -18,7 +18,7 @@ function Count(){
 
     return(
         <React.Fragment>
-        <h2>{Count+3}</h2>
+        <h2>{Count}</h2>
         <button onClick = {IncrementButton} className="btn btn-secondary m-1">Increment</button>
         <button onClick = {DecrementButton} className="btn btn-secondary m-1">Decrement</button>
         </React.Fragment>

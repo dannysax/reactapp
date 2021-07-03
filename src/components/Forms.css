@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Forms{
+    text-align: center;
+    background-color: rgb(57, 12, 99);
+    color: white;
+}
