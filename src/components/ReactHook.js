@@ -4,10 +4,15 @@ import React, {useState, useEffect} from "react"
 function ReactHook(){
     const [info, setInfo] = useState({username:"", password:""})
     const [articles, setArticles] = useState(["The TOE way", "Entrepreneurship in Africa"])
+    const [count, setCount] = useState(0)
 
-    useEffect(()=>{
+    /*useEffect(()=>{
         console.log("useEffect is called")
-    }, [])
+    }, [count])*/
+    useEffect(()=>{
+        document.title = `button clicked ${count} times`
+        console.log(`button clicked ${count} times`)
+    })
     return(
         <React.Fragment>
             <input type="email" placeholder="Enter Email" className="form form-control" value={info.username} onChange={(e)=>{setInfo({...info, username:e.target.value})}}/>
@@ -19,6 +24,8 @@ function ReactHook(){
                     articles.map(article =>
                         <h2 key={article}>{article}</h2>)
                 }
+
+                <button className="btn btn-primary" onClick={()=>{setCount(count+1)}}>count up: {count}</button>
            
         </React.Fragment>
     )

@@ -7,14 +7,14 @@ import React, {Component} from 'react';
 import ComponentA from "./components/ComponentA";
 import Count from './components/Count';
 import Counter from './components/Counter';
-import EffectHook from './components/EffectHook';
+import FetchData from './components/FetchData';
 
 export const MyContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <Button name="Daniel"/>
+      {/*<Button name="Daniel"/>
       <MyElement lib = {["laravel", "flask", "react", "vue.js"]}/>
       <MyClass schools = {["Havard", "Yale", "Hopkins"]}/>
       <LifeCycle/>
@@ -22,8 +22,8 @@ function App() {
     <ComponentA />
 </MyContext.Provider>
 <Count/>
-<Counter/>
-<EffectHook/>
+  <Counter/>*/}
+<FetchData/>
 </div>
 
     );
