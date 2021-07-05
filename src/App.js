@@ -14,15 +14,15 @@ export const MyContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      {/*<Button name="Daniel"/>
+       <MyClass schools = {["Havard", "Yale", "Hopkins"]}/>
+      <Button name="Daniel"/>
       <MyElement lib = {["laravel", "flask", "react", "vue.js"]}/>
-      <MyClass schools = {["Havard", "Yale", "Hopkins"]}/>
       <LifeCycle/>
-<MyContext.Provider value="This is a context value">
+<MyContext.Provider value="This is useContext in use">
     <ComponentA />
 </MyContext.Provider>
 <Count/>
-  <Counter/>*/}
+  <Counter/>
 <FetchData/>
 </div>
 

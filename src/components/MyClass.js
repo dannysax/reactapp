@@ -9,7 +9,7 @@ class MyClass extends Component{
     render(){
         return(
             <div>
-                <button className="btn btn-success">class button</button>
+               <a href="http://localhost:3000/login"> <button className="btn btn-success">login</button></a>
                 <h1>{this.MySchool(this.props.schools)}</h1>
             </div>
             
